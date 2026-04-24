@@ -85,7 +85,7 @@ function addStickyNote() {
   console.log('submitted');
   responses.push(stickyNote);
   
-  stickyNote.style('background', 'rgb(182,182,182)');
+  stickyNote.style('background', 'rgb(188, 185, 185)');
   textInput.value('');
   submitBtn.attribute('disabled', '');
   isTyping = false;
