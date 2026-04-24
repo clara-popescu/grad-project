@@ -6,6 +6,7 @@ let isTyping = false;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   select('body').style('user-select', 'none'); // disable text selection when moving the answer
+  select('body').style('background', '#111');
 
   // Create a panel div and style it.
   panel = createDiv('');
@@ -88,6 +89,10 @@ function addStickyNote() {
   textInput.value('');
   submitBtn.attribute('disabled', '');
   isTyping = false;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
